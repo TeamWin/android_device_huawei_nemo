@@ -1,0 +1,6 @@
+on fs
+	mkdir /modem_fw
+	wait /dev/block/platform/hi_mci.0/by-name/modem_fw
+	mount ext4 /dev/block/platform/hi_mci.0/by-name/modem_fw /modem_fw ro context=u:object_r:modem_fw_file:s0
+	modem_fs_chk
+	

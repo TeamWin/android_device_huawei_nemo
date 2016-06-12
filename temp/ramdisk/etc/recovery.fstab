@@ -1,0 +1,18 @@
+# blk_device                                    mount_point fs_type
+/dev/block/mmcblk1p1                            /sdcard     vfat      defaults        defaults
+defaults                                        /storage    ramdisk   defaults        defaults
+system     /system     ext4      defaults        defaults
+cache      /cache      ext4      defaults        defaults
+userdata   /data       ext4      defaults        length=-16384
+/dev/block/platform/hi_mci.0/by-name/misc       /misc       emmc      defaults        defaults
+/dev/block/platform/hi_mci.0/by-name/boot       /boot       emmc      defaults        defaults
+/dev/block/platform/hi_mci.0/by-name/recovery   /recovery   emmc      defaults        defaults
+cust       /cust       ext4      defaults        defaults
+/dev/block/platform/hi_mci.0/by-name/uboot      /uboot      emmc      defaults        defaults
+splash2    /splash2    ext4      defaults        defaults
+/dev/block/sda1                                 /usb        vfat      defaults        defaults
+system     /newsys     ext4      defaults        defaults
+modemnvm1  /mnvm1:0    ext4      defaults        defaults
+modemnvm2  /mnvm2:0    ext4      defaults        defaults
+modemlog   /mnvm3:0    ext4      defaults        defaults
+
